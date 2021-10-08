@@ -37,5 +37,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(CreditCard::class);
     }
+
+    public function interests(): HasMany
+    {
+        return $this->hasMany(Interest::class);
+    }
     // endregion
 }

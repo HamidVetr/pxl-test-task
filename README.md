@@ -10,10 +10,11 @@
     DB_PASSWORD=
    ```
 2) Run "composer install"
-3) Run "php artisan migrate:fresh --seed"
-4) Create a folder in `storage/app` directory called `data` and put `challenge.json` file inside this folder. The end result should be like this:
+3) Run "php artisan key:generate"
+4) Run "php artisan migrate:fresh --seed"
+5) Create a folder in `storage/app` directory called `data` and put `challenge.json` file inside this folder. The end result should be like this:
    ```
    storage/app/data/challenge.json
    ```
-5) Run "php artisan schedule:run" to start data mapping
-6) The process then can be resumed by doing the 3rd step again
+6) Run "php artisan schedule:run" to start data mapping
+7) The process then can be resumed by doing the 3rd step again
